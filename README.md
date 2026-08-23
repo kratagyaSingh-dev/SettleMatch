@@ -506,17 +506,6 @@ The matching engine does not change. Only **ingest** and **tenancy** do.
 
 ---
 
-## Pitch script
-
-1. **0:00** — Two lists. Manual matching. Audit pain.  
-2. **0:45** — Upload live files. Reconcile.  
-3. **1:30** — Dashboard: 90% match, ~87% recovery, 10 leftovers.  
-4. **2:30** — One exception + human review. We refuse, we don’t guess.  
-5. **3:30** — Connections: nightly Razorpay + bank ingest.  
-6. **4:30** — Download audit pack. Close: *rules first, AI second, gate always.*
-
----
-
 ## Docs
 
 - [`architecture.md`](architecture.md) — pipeline and invariants  
