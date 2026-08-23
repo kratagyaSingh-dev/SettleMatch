@@ -22,7 +22,7 @@ st.set_page_config(
     page_title="SettleMatch",
     page_icon="₹",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
 
 CUSTOM_CSS = """
@@ -49,7 +49,16 @@ html, body, .stApp, [data-testid="stAppViewContainer"],
     linear-gradient(180deg, #f7faf8 0%, #eef3f0 100%) !important;
 }
 
-#MainMenu, footer, header, .stDeployButton { visibility: hidden; display: none; }
+#MainMenu, footer, .stDeployButton { visibility: hidden; display: none; }
+header[data-testid="stHeader"] {
+  background: transparent !important;
+}
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"] {
+  display: flex !important;
+  visibility: visible !important;
+  z-index: 1000 !important;
+}
 
 .block-container {
   padding-top: 1.2rem !important;
@@ -274,14 +283,14 @@ if st.session_state.get("nav_pending"):
 if st.session_state.get("nav_page") == "Run":
     st.session_state.nav_page = "Upload"
 
-# ----- Sidebar -----
+# ----- Sidebar (status only — page switch is in the main bar so phones can use it) -----
 with st.sidebar:
     st.markdown(
         '<p class="sm-kicker">SettleMatch</p>'
         '<p class="sm-brand" style="font-size:1.35rem !important;">Workspace</p>',
         unsafe_allow_html=True,
     )
-    page = st.radio("Navigate", PAGES, label_visibility="collapsed", key="nav_page")
+    st.caption("Pages also sit at the top of the screen on phone.")
     st.divider()
     result_ready = st.session_state.result is not None
     st.markdown(
@@ -293,6 +302,8 @@ with st.sidebar:
     reviewed = sum(1 for v in st.session_state.reviews.values() if v)
     if reviewed:
         st.caption(f"Human reviews logged: {reviewed}")
+
+page = st.selectbox("Page", PAGES, key="nav_page")
 
 st.markdown(
     """
