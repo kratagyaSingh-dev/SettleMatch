@@ -536,23 +536,6 @@ with st.sidebar:
     if reviewed:
         st.caption(f"Human reviews logged: {reviewed}")
 
-# Always-visible on desktop + phone: pages menu and theme.
-nav_col, theme_col = st.columns([1.1, 2.2])
-with nav_col:
-    with st.popover("··· Pages"):
-        jump = st.radio(
-            "Workspace pages",
-            PAGES,
-            index=PAGES.index(page) if page in PAGES else 0,
-            label_visibility="collapsed",
-            key="mobile_nav_jump",
-        )
-        if jump != page:
-            st.session_state.nav_pending = jump
-            st.rerun()
-with theme_col:
-    _theme_switch("header")
-
 st.markdown(
     """
     <p class="sm-kicker">Razorpay AI Buildathon · Track 04 · AI Finance Controller</p>
