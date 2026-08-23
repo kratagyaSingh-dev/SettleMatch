@@ -126,10 +126,25 @@ def _heuristic_suggestion(
     )
 
 
+def _setting(name: str, default: str = "") -> str:
+    val = os.getenv(name, "").strip()
+    if val:
+        return val
+    try:
+        import streamlit as st
+
+        secret = st.secrets.get(name)
+        if secret:
+            return str(secret).strip()
+    except Exception:
+        pass
+    return default
+
+
 class AIMatcher:
     def __init__(self, api_key: str | None = None, model: str | None = None):
-        self.api_key = api_key or os.getenv("GEMINI_API_KEY", "")
-        self.model_name = model or os.getenv("GEMINI_MODEL", "gemini-3.6-flash")
+        self.api_key = api_key or _setting("GEMINI_API_KEY")
+        self.model_name = model or _setting("GEMINI_MODEL", "gemini-3.6-flash")
         self._model = None
         if self.api_key and genai is not None:
             genai.configure(api_key=self.api_key)
