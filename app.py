@@ -37,10 +37,9 @@ CUSTOM_CSS = """
   color-scheme: light !important;
 }
 
-html, body, .stApp, [data-testid="stAppViewContainer"],
-[data-testid="stMarkdownContainer"], [data-testid="stMarkdownContainer"] * {
+html, body, .stApp, [data-testid="stAppViewContainer"] {
   font-family: "Source Sans 3", "Segoe UI", sans-serif !important;
-  color: #0d1f1a !important;
+  color: #0d1f1a;
 }
 
 .stApp {
@@ -268,83 +267,137 @@ section[data-testid="stSidebar"] {
 DARK_CSS = """
 <style>
 :root, [data-testid="stAppViewContainer"], .stApp {
-  --ink: #e8efe9 !important;
-  --ink-soft: #9aada4 !important;
-  --line: #2c3a35 !important;
-  --jade: #3dcfb0 !important;
+  --ink: #f3f7f5 !important;
+  --ink-soft: #b7c8bf !important;
+  --line: #3d4a45 !important;
+  --jade: #5ee0c0 !important;
   color-scheme: dark !important;
 }
 html, body, .stApp, [data-testid="stAppViewContainer"],
-[data-testid="stMarkdownContainer"], [data-testid="stMarkdownContainer"] * {
-  color: #e8efe9 !important;
+[data-testid="stMain"], [data-testid="stHeader"] {
+  background: #0b100e !important;
+  color: #f3f7f5 !important;
 }
-.stApp, [data-testid="stAppViewContainer"] {
+.stApp {
   background:
-    radial-gradient(1000px 420px at 10% -10%, #16352c 0%, transparent 50%),
-    linear-gradient(180deg, #0c1210 0%, #111816 100%) !important;
+    radial-gradient(900px 380px at 8% -8%, #184338 0%, transparent 52%),
+    linear-gradient(180deg, #0b100e 0%, #121917 100%) !important;
 }
-header, header[data-testid="stHeader"] { background: transparent !important; }
-[data-testid="stSidebarCollapsedControl"],
-[data-testid="collapsedControl"],
-[data-testid="stExpandSidebarButton"] {
-  background: #e8efe9 !important;
-  color: #0c1210 !important;
-  border-color: #e8efe9 !important;
+[data-testid="stHeader"] { background: transparent !important; }
+
+section[data-testid="stSidebar"] {
+  background: #101614 !important;
 }
-.sm-brand, .sm-brand * { color: #f4faf6 !important; -webkit-text-fill-color: #f4faf6 !important; }
-.sm-kicker { color: #3dcfb0 !important; }
+section[data-testid="stSidebar"] * {
+  color: #f3f7f5 !important;
+  -webkit-text-fill-color: #f3f7f5 !important;
+}
+
+[data-testid="stMarkdownContainer"],
+[data-testid="stMarkdownContainer"] p,
+[data-testid="stMarkdownContainer"] span,
+[data-testid="stMarkdownContainer"] li,
+[data-testid="stWidgetLabel"],
+[data-testid="stWidgetLabel"] *,
+[data-testid="stCaptionContainer"],
+[data-testid="stCaptionContainer"] *,
+[data-testid="stRadio"] label,
+[data-testid="stRadio"] p,
+[data-testid="stRadio"] span,
+label, .stSlider label, .stSelectbox label, .stTextInput label,
+[data-testid="stMetricLabel"], [data-testid="stMetricValue"],
+[data-testid="stMetricDelta"] {
+  color: #f3f7f5 !important;
+  -webkit-text-fill-color: #f3f7f5 !important;
+}
+
+.sm-brand, .sm-brand * { color: #f8fbf9 !important; -webkit-text-fill-color: #f8fbf9 !important; }
+.sm-kicker { color: #5ee0c0 !important; }
 .sm-lede, .sm-section p, .sm-panel-sub, .sm-kpi .hint, .sm-kpi .label, .sm-foot {
-  color: #9aada4 !important;
+  color: #b7c8bf !important;
 }
 .sm-kpi, .sm-panel {
-  background: #1a2220 !important;
-  border-color: #2c3a35 !important;
+  background: #1c2623 !important;
+  border: 1px solid #3d4a45 !important;
 }
 .sm-kpi .value, .sm-panel-title, .sm-section h2, .sm-empty strong {
-  color: #f4faf6 !important;
+  color: #f8fbf9 !important;
 }
-.sm-status.ok { background: #16382c; color: #8ee0c2; border-color: #245544; }
-.sm-status.warn { background: #3a2f14; color: #e6c56a; border-color: #5a4a1e; }
-.sm-status.neutral { background: #1e2724; color: #9aada4; border-color: #2c3a35; }
-.sm-empty { background: rgba(26,34,32,0.7); border-color: #2c3a35; color: #9aada4; }
+.sm-status.ok { background: #16382c !important; color: #8ee0c2 !important; border-color: #2a6a54 !important; }
+.sm-status.warn { background: #3a2f14 !important; color: #f0d27a !important; border-color: #6a5420 !important; }
+.sm-status.neutral { background: #24302c !important; color: #c5d4cc !important; border-color: #3d4a45 !important; }
+.sm-empty { background: #1c2623 !important; border-color: #3d4a45 !important; color: #b7c8bf !important; }
+
+[data-testid="stFileUploaderDropzone"] {
+  background: #1c2623 !important;
+  border: 1px dashed #5ee0c0 !important;
+  color: #f3f7f5 !important;
+}
+[data-testid="stFileUploaderDropzone"] * {
+  color: #d7e4de !important;
+  -webkit-text-fill-color: #d7e4de !important;
+}
+[data-testid="stTextInput"] input,
+[data-baseweb="input"] input,
+[data-baseweb="select"] > div,
+[data-testid="stNumberInput"] input {
+  background: #1c2623 !important;
+  color: #f8fbf9 !important;
+  -webkit-text-fill-color: #f8fbf9 !important;
+  border-color: #3d4a45 !important;
+}
+
 div.stButton > button[kind="primary"],
 div.stButton > button[data-testid="baseButton-primary"] {
-  background: #3dcfb0 !important;
-  border-color: #3dcfb0 !important;
-  color: #0c1210 !important;
-  -webkit-text-fill-color: #0c1210 !important;
+  background: #5ee0c0 !important;
+  border-color: #5ee0c0 !important;
+  color: #0b100e !important;
+  -webkit-text-fill-color: #0b100e !important;
 }
 div.stButton > button[kind="primary"] p,
 div.stButton > button[data-testid="baseButton-primary"] p,
 div.stButton > button[kind="primary"] span,
 div.stButton > button[data-testid="baseButton-primary"] span {
-  color: #0c1210 !important;
-  -webkit-text-fill-color: #0c1210 !important;
+  color: #0b100e !important;
+  -webkit-text-fill-color: #0b100e !important;
 }
 div.stButton > button[kind="primary"]:disabled,
-div.stButton > button[data-testid="baseButton-primary"]:disabled {
-  background: #1e2724 !important;
-  border-color: #2c3a35 !important;
-  color: #9aada4 !important;
-  -webkit-text-fill-color: #9aada4 !important;
+div.stButton > button[data-testid="baseButton-primary"]:disabled,
+div.stButton > button[kind="primary"]:disabled p,
+div.stButton > button[data-testid="baseButton-primary"]:disabled span {
+  background: #24302c !important;
+  border-color: #3d4a45 !important;
+  color: #8aa094 !important;
+  -webkit-text-fill-color: #8aa094 !important;
 }
 div.stButton > button:not([kind="primary"]):not([data-testid="baseButton-primary"]) {
-  background: #1a2220 !important;
-  border-color: #2c3a35 !important;
-  color: #e8efe9 !important;
-  -webkit-text-fill-color: #e8efe9 !important;
+  background: #1c2623 !important;
+  border-color: #5ee0c0 !important;
+  color: #f3f7f5 !important;
+  -webkit-text-fill-color: #f3f7f5 !important;
 }
-[data-testid="stDataFrame"] { border-color: #2c3a35; background: #1a2220; }
-section[data-testid="stSidebar"] { background: #101614 !important; }
+div.stButton > button:not([kind="primary"]) p,
+div.stButton > button:not([kind="primary"]) span {
+  color: #f3f7f5 !important;
+  -webkit-text-fill-color: #f3f7f5 !important;
+}
+
+[data-testid="stDataFrame"] { border-color: #3d4a45 !important; background: #1c2623 !important; }
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"],
+[data-testid="stExpandSidebarButton"] {
+  background: #5ee0c0 !important;
+  color: #0b100e !important;
+  border-color: #5ee0c0 !important;
+}
 [data-testid="stPopover"] button {
-  background: #e8efe9 !important;
-  color: #0c1210 !important;
-  -webkit-text-fill-color: #0c1210 !important;
-  border-color: #e8efe9 !important;
+  background: #5ee0c0 !important;
+  color: #0b100e !important;
+  -webkit-text-fill-color: #0b100e !important;
+  border-color: #5ee0c0 !important;
 }
-[data-testid="stHeader"] { background: transparent !important; }
-.stSlider, .stRadio, .stSelectbox, .stTextInput, .stFileUploader, .stMetric {
-  color: #e8efe9 !important;
+[data-testid="stSuccess"], [data-testid="stInfo"], [data-testid="stWarning"] {
+  color: #0b100e !important;
 }
 </style>
 """
@@ -432,6 +485,29 @@ def _need_result():
 
 PAGES = ["Upload", "Connections", "Dashboard", "Matches", "Exceptions", "Simulator", "Export"]
 
+
+def _theme_switch(prefix: str) -> None:
+    is_dark = st.session_state.get("theme") == "Dark"
+    c1, c2 = st.columns(2)
+    with c1:
+        if st.button(
+            "Light",
+            key=f"{prefix}_light",
+            use_container_width=True,
+            type="secondary" if is_dark else "primary",
+        ):
+            st.session_state.theme_pending = "Light"
+            st.rerun()
+    with c2:
+        if st.button(
+            "Dark",
+            key=f"{prefix}_dark",
+            use_container_width=True,
+            type="primary" if is_dark else "secondary",
+        ):
+            st.session_state.theme_pending = "Dark"
+            st.rerun()
+
 # Apply deferred navigation before the sidebar radio is instantiated.
 if st.session_state.get("nav_pending"):
     st.session_state.nav_page = st.session_state.pop("nav_pending")
@@ -446,7 +522,8 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
     page = st.radio("Navigate", PAGES, label_visibility="collapsed", key="nav_page")
-    st.radio("Theme", ["Light", "Dark"], horizontal=True, key="theme")
+    st.caption("Theme")
+    _theme_switch("sidebar")
     st.divider()
     result_ready = st.session_state.result is not None
     st.markdown(
@@ -459,11 +536,10 @@ with st.sidebar:
     if reviewed:
         st.caption(f"Human reviews logged: {reviewed}")
 
-# Phone: 3-dots opens the same Workspace pages (sidebar is often hidden on mobile).
-dots, _ = st.columns([1, 6])
-with dots:
-    with st.popover("···"):
-        st.caption("Workspace")
+# Always-visible on desktop + phone: pages menu and theme.
+nav_col, theme_col = st.columns([1.1, 2.2])
+with nav_col:
+    with st.popover("··· Pages"):
         jump = st.radio(
             "Workspace pages",
             PAGES,
@@ -474,14 +550,8 @@ with dots:
         if jump != page:
             st.session_state.nav_pending = jump
             st.rerun()
-        st.caption("Theme")
-        t1, t2 = st.columns(2)
-        if t1.button("Light", use_container_width=True, key="pop_light"):
-            st.session_state.theme_pending = "Light"
-            st.rerun()
-        if t2.button("Dark", use_container_width=True, key="pop_dark"):
-            st.session_state.theme_pending = "Dark"
-            st.rerun()
+with theme_col:
+    _theme_switch("header")
 
 st.markdown(
     """
