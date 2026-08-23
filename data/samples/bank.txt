@@ -1,0 +1,128 @@
+Bank Statement
+==============
+
+bank_txn_id=BK-0043 | amount=999.74 | narration=NEFT RAZORPAY UTR7434873471 | value_date=2026-08-16 | utr=UTR7434873471
+bank_txn_id=BK-0068 | amount=5571.69 | narration=RAZORPAY SETTLEMENT pay_1068 | value_date=2026-08-14 | utr=nan
+bank_txn_id=BK-0018 | amount=999.09 | narration=NEFT RAZORPAY UTR5667010651 | value_date=2026-08-14 | utr=UTR5667010651
+bank_txn_id=BK-0100 | amount=3325.86 | narration=RZP CR 247451 MERCHANT PAYOUT | value_date=2026-08-09 | utr=nan
+bank_txn_id=BK-0001 | amount=12000.11 | narration=NEFT RAZORPAY UTR3321819600 | value_date=2026-08-09 | utr=UTR3321819600
+bank_txn_id=BK-0015 | amount=4999.76 | narration=NEFT RAZORPAY UTR4657871331 | value_date=2026-08-07 | utr=UTR4657871331
+bank_txn_id=BK-0086 | amount=2773.64 | narration=RZP CR 172400 MERCHANT PAYOUT | value_date=2026-08-04 | utr=nan
+bank_txn_id=BK-0038 | amount=1499.41 | narration=NEFT RAZORPAY UTR4436995777 | value_date=2026-08-01 | utr=UTR4436995777
+bank_txn_id=BK-0002 | amount=499.22 | narration=NEFT RAZORPAY UTR9083863794 | value_date=2026-08-17 | utr=UTR9083863794
+bank_txn_id=BK-0103 | amount=5813.44 | narration=GENERIC NEFT CREDIT | value_date=2026-08-19 | utr=nan
+bank_txn_id=BK-0054 | amount=2500.11 | narration=NEFT RAZORPAY UTR7262849877 | value_date=2026-08-12 | utr=UTR7262849877
+bank_txn_id=BK-0047 | amount=2500.49 | narration=NEFT RAZORPAY UTR5627298069 | value_date=2026-08-13 | utr=UTR5627298069
+bank_txn_id=BK-0059 | amount=2944.12 | narration=RAZORPAY SETTLEMENT pay_1059 | value_date=2026-08-15 | utr=nan
+bank_txn_id=BK-0030 | amount=4999.04 | narration=NEFT RAZORPAY UTR9826204505 | value_date=2026-08-12 | utr=UTR9826204505
+bank_txn_id=BK-0066 | amount=2471.82 | narration=RAZORPAY SETTLEMENT pay_1066 | value_date=2026-08-08 | utr=nan
+bank_txn_id=BK-0052 | amount=4999.03 | narration=NEFT RAZORPAY UTR9663193149 | value_date=2026-08-10 | utr=UTR9663193149
+bank_txn_id=BK-0110 | amount=4017.42 | narration=UNRELATED UPI CREDIT | value_date=2026-08-20 | utr=UTR1161528098
+bank_txn_id=BK-0026 | amount=999.51 | narration=NEFT RAZORPAY UTR5135427849 | value_date=2026-08-05 | utr=UTR5135427849
+bank_txn_id=BK-0031 | amount=999.68 | narration=NEFT RAZORPAY UTR5869232260 | value_date=2026-08-04 | utr=UTR5869232260
+bank_txn_id=BK-0069 | amount=401.75 | narration=RAZORPAY SETTLEMENT pay_1069 | value_date=2026-08-09 | utr=nan
+bank_txn_id=BK-0028 | amount=4999.21 | narration=NEFT RAZORPAY UTR3487401640 | value_date=2026-08-11 | utr=UTR3487401640
+bank_txn_id=BK-0013 | amount=4999.32 | narration=NEFT RAZORPAY UTR1543039117 | value_date=2026-08-01 | utr=UTR1543039117
+bank_txn_id=BK-0056 | amount=5411.87 | narration=RAZORPAY SETTLEMENT pay_1056 | value_date=2026-08-12 | utr=nan
+bank_txn_id=BK-0125 | amount=2727.18 | narration=ATM WDL | value_date=2026-08-12 | utr=UTR2312432921
+bank_txn_id=BK-0021 | amount=999.38 | narration=NEFT RAZORPAY UTR4746872343 | value_date=2026-08-13 | utr=UTR4746872343
+bank_txn_id=BK-0063 | amount=1383.47 | narration=RAZORPAY SETTLEMENT pay_1063 | value_date=2026-08-20 | utr=nan
+bank_txn_id=BK-0119 | amount=2316.07 | narration=ATM WDL | value_date=2026-08-11 | utr=nan
+bank_txn_id=BK-0053 | amount=499.8 | narration=NEFT RAZORPAY UTR0586518506 | value_date=2026-08-19 | utr=UTR0586518506
+bank_txn_id=BK-0032 | amount=999.74 | narration=NEFT RAZORPAY UTR6342160733 | value_date=2026-08-11 | utr=UTR6342160733
+bank_txn_id=BK-0035 | amount=2500.35 | narration=NEFT RAZORPAY UTR6981693406 | value_date=2026-08-11 | utr=UTR6981693406
+bank_txn_id=BK-0078 | amount=2267.21 | narration=RZP CR 867533 MERCHANT PAYOUT | value_date=2026-08-18 | utr=nan
+bank_txn_id=BK-0045 | amount=499.41 | narration=NEFT RAZORPAY UTR8760366909 | value_date=2026-08-11 | utr=UTR8760366909
+bank_txn_id=BK-0085 | amount=5155.06 | narration=GENERIC NEFT CREDIT | value_date=2026-08-18 | utr=nan
+bank_txn_id=BK-0017 | amount=499.51 | narration=NEFT RAZORPAY UTR7382997376 | value_date=2026-08-09 | utr=UTR7382997376
+bank_txn_id=BK-0049 | amount=1499.34 | narration=NEFT RAZORPAY UTR4641708053 | value_date=2026-08-13 | utr=UTR4641708053
+bank_txn_id=BK-0087 | amount=2773.64 | narration=GENERIC NEFT CREDIT | value_date=2026-08-05 | utr=nan
+bank_txn_id=BK-0117 | amount=2289.34 | narration=SALARY | value_date=2026-08-12 | utr=nan
+bank_txn_id=BK-0007 | amount=12000.69 | narration=NEFT RAZORPAY UTR5030564139 | value_date=2026-08-08 | utr=UTR5030564139
+bank_txn_id=BK-0062 | amount=3861.3 | narration=RAZORPAY SETTLEMENT pay_1062 | value_date=2026-08-15 | utr=nan
+bank_txn_id=BK-0089 | amount=2754.91 | narration=GENERIC NEFT CREDIT | value_date=2026-08-08 | utr=nan
+bank_txn_id=BK-0067 | amount=5251.55 | narration=RAZORPAY SETTLEMENT pay_1067 | value_date=2026-08-10 | utr=nan
+bank_txn_id=BK-0106 | amount=2877.79 | narration=UNRELATED UPI CREDIT | value_date=2026-08-17 | utr=UTR3171390053
+bank_txn_id=BK-0004 | amount=1499.85 | narration=NEFT RAZORPAY UTR4078161849 | value_date=2026-08-20 | utr=UTR4078161849
+bank_txn_id=BK-0123 | amount=1366.46 | narration=SALARY | value_date=2026-08-08 | utr=nan
+bank_txn_id=BK-0070 | amount=1615.62 | narration=RAZORPAY SETTLEMENT pay_1070 | value_date=2026-08-20 | utr=nan
+bank_txn_id=BK-0022 | amount=499.58 | narration=NEFT RAZORPAY UTR0500978820 | value_date=2026-08-18 | utr=UTR0500978820
+bank_txn_id=BK-0027 | amount=12000.53 | narration=NEFT RAZORPAY UTR4124118244 | value_date=2026-08-18 | utr=UTR4124118244
+bank_txn_id=BK-0112 | amount=1742.33 | narration=IMPS | value_date=2026-08-03 | utr=nan
+bank_txn_id=BK-0019 | amount=999.19 | narration=NEFT RAZORPAY UTR7262473178 | value_date=2026-08-18 | utr=UTR7262473178
+bank_txn_id=BK-0051 | amount=12000.11 | narration=NEFT RAZORPAY UTR7452991241 | value_date=2026-08-07 | utr=UTR7452991241
+bank_txn_id=BK-0024 | amount=499.62 | narration=NEFT RAZORPAY UTR9985435346 | value_date=2026-08-14 | utr=UTR9985435346
+bank_txn_id=BK-0121 | amount=1644.49 | narration=UPI/merchant | value_date=2026-08-17 | utr=UTR5160607159
+bank_txn_id=BK-0092 | amount=721.01 | narration=RZP CR 946474 MERCHANT PAYOUT | value_date=2026-08-12 | utr=nan
+bank_txn_id=BK-0055 | amount=2500.83 | narration=NEFT RAZORPAY UTR4531473799 | value_date=2026-08-19 | utr=UTR4531473799
+bank_txn_id=BK-0034 | amount=2500.68 | narration=NEFT RAZORPAY UTR5014294019 | value_date=2026-08-18 | utr=UTR5014294019
+bank_txn_id=BK-0101 | amount=3325.86 | narration=GENERIC NEFT CREDIT | value_date=2026-08-10 | utr=nan
+bank_txn_id=BK-0029 | amount=499.33 | narration=NEFT RAZORPAY UTR4278680112 | value_date=2026-08-05 | utr=UTR4278680112
+bank_txn_id=BK-0095 | amount=2473.78 | narration=GENERIC NEFT CREDIT | value_date=2026-08-13 | utr=nan
+bank_txn_id=BK-0016 | amount=1499.02 | narration=NEFT RAZORPAY UTR3930103105 | value_date=2026-08-18 | utr=UTR3930103105
+bank_txn_id=BK-0003 | amount=499.76 | narration=NEFT RAZORPAY UTR6542351161 | value_date=2026-08-06 | utr=UTR6542351161
+bank_txn_id=BK-0084 | amount=5155.06 | narration=RZP CR 657809 MERCHANT PAYOUT | value_date=2026-08-18 | utr=nan
+bank_txn_id=BK-0072 | amount=6946.3 | narration=RAZORPAY SETTLEMENT pay_1072 | value_date=2026-08-01 | utr=nan
+bank_txn_id=BK-0033 | amount=2500.35 | narration=NEFT RAZORPAY UTR3036541458 | value_date=2026-08-08 | utr=UTR3036541458
+bank_txn_id=BK-0011 | amount=12000.72 | narration=NEFT RAZORPAY UTR4514627048 | value_date=2026-08-18 | utr=UTR4514627048
+bank_txn_id=BK-0044 | amount=12000.29 | narration=NEFT RAZORPAY UTR5581223623 | value_date=2026-08-09 | utr=UTR5581223623
+bank_txn_id=BK-0014 | amount=499.98 | narration=NEFT RAZORPAY UTR2278248963 | value_date=2026-08-18 | utr=UTR2278248963
+bank_txn_id=BK-0074 | amount=4507.56 | narration=RAZORPAY SETTLEMENT pay_1074 | value_date=2026-08-04 | utr=nan
+bank_txn_id=BK-0114 | amount=1829.05 | narration=SALARY | value_date=2026-08-05 | utr=nan
+bank_txn_id=BK-0105 | amount=4987.78 | narration=GENERIC NEFT CREDIT | value_date=2026-08-13 | utr=nan
+bank_txn_id=BK-0109 | amount=3237.95 | narration=UNRELATED UPI CREDIT | value_date=2026-08-10 | utr=UTR8961183673
+bank_txn_id=BK-0102 | amount=5813.44 | narration=RZP CR 516048 MERCHANT PAYOUT | value_date=2026-08-18 | utr=nan
+bank_txn_id=BK-0108 | amount=4548.09 | narration=UNRELATED UPI CREDIT | value_date=2026-08-17 | utr=UTR0076617711
+bank_txn_id=BK-0025 | amount=999.67 | narration=NEFT RAZORPAY UTR7510799118 | value_date=2026-08-10 | utr=UTR7510799118
+bank_txn_id=BK-0090 | amount=3136.7 | narration=RZP CR 237474 MERCHANT PAYOUT | value_date=2026-08-19 | utr=nan
+bank_txn_id=BK-0006 | amount=999.37 | narration=NEFT RAZORPAY UTR4192832764 | value_date=2026-08-07 | utr=UTR4192832764
+bank_txn_id=BK-0071 | amount=3410.83 | narration=RAZORPAY SETTLEMENT pay_1071 | value_date=2026-08-17 | utr=nan
+bank_txn_id=BK-0116 | amount=1329.64 | narration=IMPS | value_date=2026-08-14 | utr=nan
+bank_txn_id=BK-0091 | amount=3136.7 | narration=GENERIC NEFT CREDIT | value_date=2026-08-19 | utr=nan
+bank_txn_id=BK-0050 | amount=12000.07 | narration=NEFT RAZORPAY UTR0033092327 | value_date=2026-08-21 | utr=UTR0033092327
+bank_txn_id=BK-0094 | amount=2473.78 | narration=RZP CR 944064 MERCHANT PAYOUT | value_date=2026-08-12 | utr=nan
+bank_txn_id=BK-0077 | amount=2237.29 | narration=GENERIC NEFT CREDIT | value_date=2026-08-18 | utr=nan
+bank_txn_id=BK-0079 | amount=2267.21 | narration=GENERIC NEFT CREDIT | value_date=2026-08-18 | utr=nan
+bank_txn_id=BK-0012 | amount=999.51 | narration=NEFT RAZORPAY UTR4893252880 | value_date=2026-08-04 | utr=UTR4893252880
+bank_txn_id=BK-0111 | amount=2926.19 | narration=SALARY | value_date=2026-08-20 | utr=UTR4024455022
+bank_txn_id=BK-0093 | amount=721.01 | narration=GENERIC NEFT CREDIT | value_date=2026-08-12 | utr=nan
+bank_txn_id=BK-0037 | amount=1499.67 | narration=NEFT RAZORPAY UTR6482366299 | value_date=2026-08-11 | utr=UTR6482366299
+bank_txn_id=BK-0048 | amount=4999.66 | narration=NEFT RAZORPAY UTR6272046537 | value_date=2026-08-03 | utr=UTR6272046537
+bank_txn_id=BK-0096 | amount=5047.18 | narration=RZP CR 395339 MERCHANT PAYOUT | value_date=2026-08-10 | utr=nan
+bank_txn_id=BK-0005 | amount=1499.58 | narration=NEFT RAZORPAY UTR0341316475 | value_date=2026-08-03 | utr=UTR0341316475
+bank_txn_id=BK-0115 | amount=1891.73 | narration=SALARY | value_date=2026-08-09 | utr=nan
+bank_txn_id=BK-0120 | amount=1542.42 | narration=IMPS | value_date=2026-08-06 | utr=nan
+bank_txn_id=BK-0040 | amount=999.15 | narration=NEFT RAZORPAY UTR3791769367 | value_date=2026-08-02 | utr=UTR3791769367
+bank_txn_id=BK-0010 | amount=12000.16 | narration=NEFT RAZORPAY UTR9166978480 | value_date=2026-08-14 | utr=UTR9166978480
+bank_txn_id=BK-0065 | amount=2264.24 | narration=RAZORPAY SETTLEMENT pay_1065 | value_date=2026-08-04 | utr=nan
+bank_txn_id=BK-0046 | amount=2500.48 | narration=NEFT RAZORPAY UTR4668893734 | value_date=2026-08-12 | utr=UTR4668893734
+bank_txn_id=BK-0008 | amount=12000.31 | narration=NEFT RAZORPAY UTR7672423884 | value_date=2026-08-21 | utr=UTR7672423884
+bank_txn_id=BK-0076 | amount=2237.29 | narration=RZP CR 404499 MERCHANT PAYOUT | value_date=2026-08-17 | utr=nan
+bank_txn_id=BK-0036 | amount=499.52 | narration=NEFT RAZORPAY UTR3561595148 | value_date=2026-08-18 | utr=UTR3561595148
+bank_txn_id=BK-0039 | amount=12000.21 | narration=NEFT RAZORPAY UTR2148951343 | value_date=2026-08-16 | utr=UTR2148951343
+bank_txn_id=BK-0107 | amount=8904.98 | narration=UNRELATED UPI CREDIT | value_date=2026-08-24 | utr=UTR2284210205
+bank_txn_id=BK-0104 | amount=4987.78 | narration=RZP CR 137098 MERCHANT PAYOUT | value_date=2026-08-12 | utr=nan
+bank_txn_id=BK-0061 | amount=2557.69 | narration=RAZORPAY SETTLEMENT pay_1061 | value_date=2026-08-19 | utr=nan
+bank_txn_id=BK-0009 | amount=12000.58 | narration=NEFT RAZORPAY UTR6532871012 | value_date=2026-08-19 | utr=UTR6532871012
+bank_txn_id=BK-0057 | amount=4535.17 | narration=RAZORPAY SETTLEMENT pay_1057 | value_date=2026-08-17 | utr=nan
+bank_txn_id=BK-0020 | amount=499.05 | narration=NEFT RAZORPAY UTR0132677360 | value_date=2026-08-18 | utr=UTR0132677360
+bank_txn_id=BK-0041 | amount=2500.24 | narration=NEFT RAZORPAY UTR0163287083 | value_date=2026-08-21 | utr=UTR0163287083
+bank_txn_id=BK-0124 | amount=1261.3 | narration=SALARY | value_date=2026-08-13 | utr=UTR5352181883
+bank_txn_id=BK-0042 | amount=499.46 | narration=NEFT RAZORPAY UTR8895798687 | value_date=2026-08-15 | utr=UTR8895798687
+bank_txn_id=BK-0080 | amount=2113.61 | narration=RZP CR 662702 MERCHANT PAYOUT | value_date=2026-08-16 | utr=nan
+bank_txn_id=BK-0082 | amount=868.36 | narration=RZP CR 026217 MERCHANT PAYOUT | value_date=2026-08-15 | utr=nan
+bank_txn_id=BK-0083 | amount=868.36 | narration=GENERIC NEFT CREDIT | value_date=2026-08-15 | utr=nan
+bank_txn_id=BK-0118 | amount=921.41 | narration=IMPS | value_date=2026-08-17 | utr=UTR0369003432
+bank_txn_id=BK-0113 | amount=1936.2 | narration=SALARY | value_date=2026-08-03 | utr=UTR3667525459
+bank_txn_id=BK-0088 | amount=2754.91 | narration=RZP CR 869222 MERCHANT PAYOUT | value_date=2026-08-08 | utr=nan
+bank_txn_id=BK-0058 | amount=925.82 | narration=RAZORPAY SETTLEMENT pay_1058 | value_date=2026-08-09 | utr=nan
+bank_txn_id=BK-0075 | amount=7845.91 | narration=RAZORPAY SETTLEMENT pay_1075 | value_date=2026-08-09 | utr=nan
+bank_txn_id=BK-0098 | amount=4795.08 | narration=RZP CR 952145 MERCHANT PAYOUT | value_date=2026-08-02 | utr=nan
+bank_txn_id=BK-0073 | amount=1787.75 | narration=RAZORPAY SETTLEMENT pay_1073 | value_date=2026-08-18 | utr=nan
+bank_txn_id=BK-0097 | amount=5047.18 | narration=GENERIC NEFT CREDIT | value_date=2026-08-11 | utr=nan
+bank_txn_id=BK-0060 | amount=1887.8 | narration=RAZORPAY SETTLEMENT pay_1060 | value_date=2026-08-16 | utr=nan
+bank_txn_id=BK-0064 | amount=3714.01 | narration=RAZORPAY SETTLEMENT pay_1064 | value_date=2026-08-15 | utr=nan
+bank_txn_id=BK-0081 | amount=2113.61 | narration=GENERIC NEFT CREDIT | value_date=2026-08-17 | utr=nan
+bank_txn_id=BK-0099 | amount=4795.08 | narration=GENERIC NEFT CREDIT | value_date=2026-08-03 | utr=nan
+bank_txn_id=BK-0122 | amount=1344.92 | narration=IMPS | value_date=2026-08-23 | utr=UTR4160529751
+bank_txn_id=BK-0023 | amount=4999.08 | narration=NEFT RAZORPAY UTR1913619399 | value_date=2026-08-06 | utr=UTR1913619399

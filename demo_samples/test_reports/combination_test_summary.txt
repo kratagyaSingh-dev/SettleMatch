@@ -1,0 +1,20 @@
+SettleMatch — Combination Test Report
+========================================
+Generated: 2026-08-23T07:27:58.267455+00:00
+Demo folder: C:\Users\KRATAGYA SINGH\OneDrive\Desktop\RazorHack\demo_samples
+
+SAMPLE FILES ON YOUR PC:
+  settlements/ -> csv, xlsx, pdf, docx, txt
+  bank/        -> csv, xlsx, pdf, docx, txt
+
+KEY COMBINATION RESULTS:
+----------------------------------------
+Word + Word      | rows 100+125 | cols 7+5 strict=True | match 90%
+PDF + PDF        | rows 100+125 | cols 7+5 strict=True | match 90%
+CSV + Word       | rows 100+125 | cols 7+5 strict=True | match 90%
+Word + PDF       | rows 100+125 | cols 7+5 strict=True | match 90%
+PDF + Word       | rows 100+125 | cols 7+5 strict=True | match 90%
+TXT + TXT        | rows 100+125 | cols 7+5 strict=True | match 90%
+
+All 6 key combos passed: True
+Full audit: demo_samples/test_reports/full_25_audit.json

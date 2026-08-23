@@ -1,0 +1,11 @@
+{
+  "total_settlements": 100,
+  "matched": 90,
+  "exceptions": 10,
+  "match_rate": 0.9,
+  "rule_matches": 75,
+  "ai_matches": 15,
+  "money_matched_inr": 330754.73,
+  "ai_mode": "heuristic",
+  "confidence_threshold": 0.85
+}

@@ -1,0 +1,677 @@
+[
+  {
+    "combo": "settlements.csv + bank.csv",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.csv + bank.xlsx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.csv + bank.pdf",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.csv + bank.docx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.csv + bank.txt",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.xlsx + bank.csv",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.xlsx + bank.xlsx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.xlsx + bank.pdf",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.xlsx + bank.docx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.xlsx + bank.txt",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.pdf + bank.csv",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.pdf + bank.xlsx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.pdf + bank.pdf",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.pdf + bank.docx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.pdf + bank.txt",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.docx + bank.csv",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.docx + bank.xlsx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.docx + bank.pdf",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.docx + bank.docx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.docx + bank.txt",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.txt + bank.csv",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.txt + bank.xlsx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.txt + bank.pdf",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.txt + bank.docx",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  },
+  {
+    "combo": "settlements.txt + bank.txt",
+    "status": "PASS",
+    "settlement_rows": 100,
+    "bank_rows": 125,
+    "settlement_cols": [
+      "settlement_id",
+      "payment_id",
+      "amount",
+      "currency",
+      "utr",
+      "settled_at",
+      "status"
+    ],
+    "bank_cols": [
+      "bank_txn_id",
+      "amount",
+      "narration",
+      "value_date",
+      "utr"
+    ],
+    "columns_strict": true,
+    "match_rate": 0.9,
+    "matched": 90,
+    "exceptions": 10,
+    "notes": []
+  }
+]

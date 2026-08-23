@@ -1,0 +1,91 @@
+settlement_id,bank_txn_id,method,confidence,reason
+SET-001,BK-0001,rule_exact_utr,1.0,Exact UTR UTR3321819600 and amount match
+SET-002,BK-0002,rule_exact_utr,1.0,Exact UTR UTR9083863794 and amount match
+SET-003,BK-0003,rule_exact_utr,1.0,Exact UTR UTR6542351161 and amount match
+SET-004,BK-0004,rule_exact_utr,1.0,Exact UTR UTR4078161849 and amount match
+SET-005,BK-0005,rule_exact_utr,1.0,Exact UTR UTR0341316475 and amount match
+SET-006,BK-0006,rule_exact_utr,1.0,Exact UTR UTR4192832764 and amount match
+SET-007,BK-0007,rule_exact_utr,1.0,Exact UTR UTR5030564139 and amount match
+SET-008,BK-0008,rule_exact_utr,1.0,Exact UTR UTR7672423884 and amount match
+SET-009,BK-0009,rule_exact_utr,1.0,Exact UTR UTR6532871012 and amount match
+SET-010,BK-0010,rule_exact_utr,1.0,Exact UTR UTR9166978480 and amount match
+SET-011,BK-0011,rule_exact_utr,1.0,Exact UTR UTR4514627048 and amount match
+SET-012,BK-0012,rule_exact_utr,1.0,Exact UTR UTR4893252880 and amount match
+SET-013,BK-0013,rule_exact_utr,1.0,Exact UTR UTR1543039117 and amount match
+SET-014,BK-0014,rule_exact_utr,1.0,Exact UTR UTR2278248963 and amount match
+SET-015,BK-0015,rule_exact_utr,1.0,Exact UTR UTR4657871331 and amount match
+SET-016,BK-0016,rule_exact_utr,1.0,Exact UTR UTR3930103105 and amount match
+SET-017,BK-0017,rule_exact_utr,1.0,Exact UTR UTR7382997376 and amount match
+SET-018,BK-0018,rule_exact_utr,1.0,Exact UTR UTR5667010651 and amount match
+SET-019,BK-0019,rule_exact_utr,1.0,Exact UTR UTR7262473178 and amount match
+SET-020,BK-0020,rule_exact_utr,1.0,Exact UTR UTR0132677360 and amount match
+SET-021,BK-0021,rule_exact_utr,1.0,Exact UTR UTR4746872343 and amount match
+SET-022,BK-0022,rule_exact_utr,1.0,Exact UTR UTR0500978820 and amount match
+SET-023,BK-0023,rule_exact_utr,1.0,Exact UTR UTR1913619399 and amount match
+SET-024,BK-0024,rule_exact_utr,1.0,Exact UTR UTR9985435346 and amount match
+SET-025,BK-0025,rule_exact_utr,1.0,Exact UTR UTR7510799118 and amount match
+SET-026,BK-0026,rule_exact_utr,1.0,Exact UTR UTR5135427849 and amount match
+SET-027,BK-0027,rule_exact_utr,1.0,Exact UTR UTR4124118244 and amount match
+SET-028,BK-0028,rule_exact_utr,1.0,Exact UTR UTR3487401640 and amount match
+SET-029,BK-0029,rule_exact_utr,1.0,Exact UTR UTR4278680112 and amount match
+SET-030,BK-0030,rule_exact_utr,1.0,Exact UTR UTR9826204505 and amount match
+SET-031,BK-0031,rule_exact_utr,1.0,Exact UTR UTR5869232260 and amount match
+SET-032,BK-0032,rule_exact_utr,1.0,Exact UTR UTR6342160733 and amount match
+SET-033,BK-0033,rule_exact_utr,1.0,Exact UTR UTR3036541458 and amount match
+SET-034,BK-0034,rule_exact_utr,1.0,Exact UTR UTR5014294019 and amount match
+SET-035,BK-0035,rule_exact_utr,1.0,Exact UTR UTR6981693406 and amount match
+SET-036,BK-0036,rule_exact_utr,1.0,Exact UTR UTR3561595148 and amount match
+SET-037,BK-0037,rule_exact_utr,1.0,Exact UTR UTR6482366299 and amount match
+SET-038,BK-0038,rule_exact_utr,1.0,Exact UTR UTR4436995777 and amount match
+SET-039,BK-0039,rule_exact_utr,1.0,Exact UTR UTR2148951343 and amount match
+SET-040,BK-0040,rule_exact_utr,1.0,Exact UTR UTR3791769367 and amount match
+SET-041,BK-0041,rule_exact_utr,1.0,Exact UTR UTR0163287083 and amount match
+SET-042,BK-0042,rule_exact_utr,1.0,Exact UTR UTR8895798687 and amount match
+SET-043,BK-0043,rule_exact_utr,1.0,Exact UTR UTR7434873471 and amount match
+SET-044,BK-0044,rule_exact_utr,1.0,Exact UTR UTR5581223623 and amount match
+SET-045,BK-0045,rule_exact_utr,1.0,Exact UTR UTR8760366909 and amount match
+SET-046,BK-0046,rule_exact_utr,1.0,Exact UTR UTR4668893734 and amount match
+SET-047,BK-0047,rule_exact_utr,1.0,Exact UTR UTR5627298069 and amount match
+SET-048,BK-0048,rule_exact_utr,1.0,Exact UTR UTR6272046537 and amount match
+SET-049,BK-0049,rule_exact_utr,1.0,Exact UTR UTR4641708053 and amount match
+SET-050,BK-0050,rule_exact_utr,1.0,Exact UTR UTR0033092327 and amount match
+SET-051,BK-0051,rule_exact_utr,1.0,Exact UTR UTR7452991241 and amount match
+SET-052,BK-0052,rule_exact_utr,1.0,Exact UTR UTR9663193149 and amount match
+SET-053,BK-0053,rule_exact_utr,1.0,Exact UTR UTR0586518506 and amount match
+SET-054,BK-0054,rule_exact_utr,1.0,Exact UTR UTR7262849877 and amount match
+SET-055,BK-0055,rule_exact_utr,1.0,Exact UTR UTR4531473799 and amount match
+SET-056,BK-0056,rule_amount_date,1.0,Unique amount 5411.87 within ±1 day window
+SET-057,BK-0057,rule_amount_date,1.0,Unique amount 4535.17 within ±1 day window
+SET-058,BK-0058,rule_amount_date,1.0,Unique amount 925.82 within ±1 day window
+SET-059,BK-0059,rule_amount_date,1.0,Unique amount 2944.12 within ±1 day window
+SET-060,BK-0060,rule_amount_date,1.0,Unique amount 1887.8 within ±1 day window
+SET-061,BK-0061,rule_amount_date,1.0,Unique amount 2557.69 within ±1 day window
+SET-062,BK-0062,rule_amount_date,1.0,Unique amount 3861.3 within ±1 day window
+SET-063,BK-0063,rule_amount_date,1.0,Unique amount 1383.47 within ±1 day window
+SET-064,BK-0064,rule_amount_date,1.0,Unique amount 3714.01 within ±1 day window
+SET-065,BK-0065,rule_amount_date,1.0,Unique amount 2264.24 within ±1 day window
+SET-066,BK-0066,rule_amount_date,1.0,Unique amount 2471.82 within ±1 day window
+SET-067,BK-0067,rule_amount_date,1.0,Unique amount 5251.55 within ±1 day window
+SET-068,BK-0068,rule_amount_date,1.0,Unique amount 5571.69 within ±1 day window
+SET-069,BK-0069,rule_amount_date,1.0,Unique amount 401.75 within ±1 day window
+SET-070,BK-0070,rule_amount_date,1.0,Unique amount 1615.62 within ±1 day window
+SET-071,BK-0071,rule_amount_date,1.0,Unique amount 3410.83 within ±1 day window
+SET-072,BK-0072,rule_amount_date,1.0,Unique amount 6946.3 within ±1 day window
+SET-073,BK-0073,rule_amount_date,1.0,Unique amount 1787.75 within ±1 day window
+SET-074,BK-0074,rule_amount_date,1.0,Unique amount 4507.56 within ±1 day window
+SET-075,BK-0075,rule_amount_date,1.0,Unique amount 7845.91 within ±1 day window
+SET-076,BK-0076,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-077,BK-0078,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-078,BK-0080,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-079,BK-0082,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-080,BK-0084,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-081,BK-0086,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-082,BK-0088,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-083,BK-0090,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-084,BK-0092,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-085,BK-0094,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-086,BK-0096,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-087,BK-0098,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-088,BK-0100,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-089,BK-0102,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"
+SET-090,BK-0104,ai_gated,0.99,"amount match, partial UTR in narration, date within 1 day"

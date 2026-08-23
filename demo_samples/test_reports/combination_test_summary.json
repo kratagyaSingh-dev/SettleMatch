@@ -1,0 +1,293 @@
+{
+  "generated_at": "2026-08-23T07:27:58.267455+00:00",
+  "demo_folder": "demo_samples",
+  "files_on_pc": {
+    "settlements": [
+      "demo_samples\\settlements\\settlements.csv",
+      "demo_samples\\settlements\\settlements.xlsx",
+      "demo_samples\\settlements\\settlements.pdf",
+      "demo_samples\\settlements\\settlements.docx",
+      "demo_samples\\settlements\\settlements.txt"
+    ],
+    "bank": [
+      "demo_samples\\bank\\bank.csv",
+      "demo_samples\\bank\\bank.xlsx",
+      "demo_samples\\bank\\bank.pdf",
+      "demo_samples\\bank\\bank.docx",
+      "demo_samples\\bank\\bank.txt"
+    ]
+  },
+  "key_combinations": [
+    {
+      "combination": "Word + Word",
+      "settlements_format": "docx",
+      "bank_format": "docx",
+      "settlement_rows": 100,
+      "bank_rows": 125,
+      "settlement_columns": [
+        "settlement_id",
+        "payment_id",
+        "amount",
+        "currency",
+        "utr",
+        "settled_at",
+        "status"
+      ],
+      "bank_columns": [
+        "bank_txn_id",
+        "amount",
+        "narration",
+        "value_date",
+        "utr"
+      ],
+      "columns_strict": true,
+      "settlement_col_count": 7,
+      "bank_col_count": 5,
+      "match_rate": 0.9,
+      "match_rate_pct": "90%",
+      "matched": 90,
+      "exceptions": 10,
+      "rule_matches": 75,
+      "ai_matches": 15,
+      "output_folder": "demo_samples\\reconciliation_outputs\\word_word",
+      "files_saved": [
+        "demo_samples\\settlements\\settlements.docx",
+        "demo_samples\\bank\\bank.docx",
+        "demo_samples\\reconciliation_outputs\\word_word\\extracted_settlements.csv",
+        "demo_samples\\reconciliation_outputs\\word_word\\extracted_bank.csv",
+        "demo_samples\\reconciliation_outputs\\word_word\\SettleMatch_report.pdf",
+        "demo_samples\\reconciliation_outputs\\word_word\\SettleMatch_report.docx",
+        "demo_samples\\reconciliation_outputs\\word_word\\report.json",
+        "demo_samples\\reconciliation_outputs\\word_word\\exceptions.csv",
+        "demo_samples\\reconciliation_outputs\\word_word\\matches.csv",
+        "demo_samples\\reconciliation_outputs\\word_word\\audit_log.jsonl"
+      ]
+    },
+    {
+      "combination": "PDF + PDF",
+      "settlements_format": "pdf",
+      "bank_format": "pdf",
+      "settlement_rows": 100,
+      "bank_rows": 125,
+      "settlement_columns": [
+        "settlement_id",
+        "payment_id",
+        "amount",
+        "currency",
+        "utr",
+        "settled_at",
+        "status"
+      ],
+      "bank_columns": [
+        "bank_txn_id",
+        "amount",
+        "narration",
+        "value_date",
+        "utr"
+      ],
+      "columns_strict": true,
+      "settlement_col_count": 7,
+      "bank_col_count": 5,
+      "match_rate": 0.9,
+      "match_rate_pct": "90%",
+      "matched": 90,
+      "exceptions": 10,
+      "rule_matches": 75,
+      "ai_matches": 15,
+      "output_folder": "demo_samples\\reconciliation_outputs\\pdf_pdf",
+      "files_saved": [
+        "demo_samples\\settlements\\settlements.pdf",
+        "demo_samples\\bank\\bank.pdf",
+        "demo_samples\\reconciliation_outputs\\pdf_pdf\\extracted_settlements.csv",
+        "demo_samples\\reconciliation_outputs\\pdf_pdf\\extracted_bank.csv",
+        "demo_samples\\reconciliation_outputs\\pdf_pdf\\SettleMatch_report.pdf",
+        "demo_samples\\reconciliation_outputs\\pdf_pdf\\SettleMatch_report.docx",
+        "demo_samples\\reconciliation_outputs\\pdf_pdf\\report.json",
+        "demo_samples\\reconciliation_outputs\\pdf_pdf\\exceptions.csv",
+        "demo_samples\\reconciliation_outputs\\pdf_pdf\\matches.csv",
+        "demo_samples\\reconciliation_outputs\\pdf_pdf\\audit_log.jsonl"
+      ]
+    },
+    {
+      "combination": "CSV + Word",
+      "settlements_format": "csv",
+      "bank_format": "docx",
+      "settlement_rows": 100,
+      "bank_rows": 125,
+      "settlement_columns": [
+        "settlement_id",
+        "payment_id",
+        "amount",
+        "currency",
+        "utr",
+        "settled_at",
+        "status"
+      ],
+      "bank_columns": [
+        "bank_txn_id",
+        "amount",
+        "narration",
+        "value_date",
+        "utr"
+      ],
+      "columns_strict": true,
+      "settlement_col_count": 7,
+      "bank_col_count": 5,
+      "match_rate": 0.9,
+      "match_rate_pct": "90%",
+      "matched": 90,
+      "exceptions": 10,
+      "rule_matches": 75,
+      "ai_matches": 15,
+      "output_folder": "demo_samples\\reconciliation_outputs\\csv_word",
+      "files_saved": [
+        "demo_samples\\settlements\\settlements.csv",
+        "demo_samples\\bank\\bank.docx",
+        "demo_samples\\reconciliation_outputs\\csv_word\\extracted_settlements.csv",
+        "demo_samples\\reconciliation_outputs\\csv_word\\extracted_bank.csv",
+        "demo_samples\\reconciliation_outputs\\csv_word\\SettleMatch_report.pdf",
+        "demo_samples\\reconciliation_outputs\\csv_word\\SettleMatch_report.docx",
+        "demo_samples\\reconciliation_outputs\\csv_word\\report.json",
+        "demo_samples\\reconciliation_outputs\\csv_word\\exceptions.csv",
+        "demo_samples\\reconciliation_outputs\\csv_word\\matches.csv",
+        "demo_samples\\reconciliation_outputs\\csv_word\\audit_log.jsonl"
+      ]
+    },
+    {
+      "combination": "Word + PDF",
+      "settlements_format": "docx",
+      "bank_format": "pdf",
+      "settlement_rows": 100,
+      "bank_rows": 125,
+      "settlement_columns": [
+        "settlement_id",
+        "payment_id",
+        "amount",
+        "currency",
+        "utr",
+        "settled_at",
+        "status"
+      ],
+      "bank_columns": [
+        "bank_txn_id",
+        "amount",
+        "narration",
+        "value_date",
+        "utr"
+      ],
+      "columns_strict": true,
+      "settlement_col_count": 7,
+      "bank_col_count": 5,
+      "match_rate": 0.9,
+      "match_rate_pct": "90%",
+      "matched": 90,
+      "exceptions": 10,
+      "rule_matches": 75,
+      "ai_matches": 15,
+      "output_folder": "demo_samples\\reconciliation_outputs\\word_pdf",
+      "files_saved": [
+        "demo_samples\\settlements\\settlements.docx",
+        "demo_samples\\bank\\bank.pdf",
+        "demo_samples\\reconciliation_outputs\\word_pdf\\extracted_settlements.csv",
+        "demo_samples\\reconciliation_outputs\\word_pdf\\extracted_bank.csv",
+        "demo_samples\\reconciliation_outputs\\word_pdf\\SettleMatch_report.pdf",
+        "demo_samples\\reconciliation_outputs\\word_pdf\\SettleMatch_report.docx",
+        "demo_samples\\reconciliation_outputs\\word_pdf\\report.json",
+        "demo_samples\\reconciliation_outputs\\word_pdf\\exceptions.csv",
+        "demo_samples\\reconciliation_outputs\\word_pdf\\matches.csv",
+        "demo_samples\\reconciliation_outputs\\word_pdf\\audit_log.jsonl"
+      ]
+    },
+    {
+      "combination": "PDF + Word",
+      "settlements_format": "pdf",
+      "bank_format": "docx",
+      "settlement_rows": 100,
+      "bank_rows": 125,
+      "settlement_columns": [
+        "settlement_id",
+        "payment_id",
+        "amount",
+        "currency",
+        "utr",
+        "settled_at",
+        "status"
+      ],
+      "bank_columns": [
+        "bank_txn_id",
+        "amount",
+        "narration",
+        "value_date",
+        "utr"
+      ],
+      "columns_strict": true,
+      "settlement_col_count": 7,
+      "bank_col_count": 5,
+      "match_rate": 0.9,
+      "match_rate_pct": "90%",
+      "matched": 90,
+      "exceptions": 10,
+      "rule_matches": 75,
+      "ai_matches": 15,
+      "output_folder": "demo_samples\\reconciliation_outputs\\pdf_word",
+      "files_saved": [
+        "demo_samples\\settlements\\settlements.pdf",
+        "demo_samples\\bank\\bank.docx",
+        "demo_samples\\reconciliation_outputs\\pdf_word\\extracted_settlements.csv",
+        "demo_samples\\reconciliation_outputs\\pdf_word\\extracted_bank.csv",
+        "demo_samples\\reconciliation_outputs\\pdf_word\\SettleMatch_report.pdf",
+        "demo_samples\\reconciliation_outputs\\pdf_word\\SettleMatch_report.docx",
+        "demo_samples\\reconciliation_outputs\\pdf_word\\report.json",
+        "demo_samples\\reconciliation_outputs\\pdf_word\\exceptions.csv",
+        "demo_samples\\reconciliation_outputs\\pdf_word\\matches.csv",
+        "demo_samples\\reconciliation_outputs\\pdf_word\\audit_log.jsonl"
+      ]
+    },
+    {
+      "combination": "TXT + TXT",
+      "settlements_format": "txt",
+      "bank_format": "txt",
+      "settlement_rows": 100,
+      "bank_rows": 125,
+      "settlement_columns": [
+        "settlement_id",
+        "payment_id",
+        "amount",
+        "currency",
+        "utr",
+        "settled_at",
+        "status"
+      ],
+      "bank_columns": [
+        "bank_txn_id",
+        "amount",
+        "narration",
+        "value_date",
+        "utr"
+      ],
+      "columns_strict": true,
+      "settlement_col_count": 7,
+      "bank_col_count": 5,
+      "match_rate": 0.9,
+      "match_rate_pct": "90%",
+      "matched": 90,
+      "exceptions": 10,
+      "rule_matches": 75,
+      "ai_matches": 15,
+      "output_folder": "demo_samples\\reconciliation_outputs\\txt_txt",
+      "files_saved": [
+        "demo_samples\\settlements\\settlements.txt",
+        "demo_samples\\bank\\bank.txt",
+        "demo_samples\\reconciliation_outputs\\txt_txt\\extracted_settlements.csv",
+        "demo_samples\\reconciliation_outputs\\txt_txt\\extracted_bank.csv",
+        "demo_samples\\reconciliation_outputs\\txt_txt\\SettleMatch_report.pdf",
+        "demo_samples\\reconciliation_outputs\\txt_txt\\SettleMatch_report.docx",
+        "demo_samples\\reconciliation_outputs\\txt_txt\\report.json",
+        "demo_samples\\reconciliation_outputs\\txt_txt\\exceptions.csv",
+        "demo_samples\\reconciliation_outputs\\txt_txt\\matches.csv",
+        "demo_samples\\reconciliation_outputs\\txt_txt\\audit_log.jsonl"
+      ]
+    }
+  ],
+  "all_pass": true
+}

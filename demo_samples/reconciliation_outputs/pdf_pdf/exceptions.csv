@@ -1,0 +1,11 @@
+settlement_id,amount,utr,reason,ai_confidence
+SET-091,8229.79,UTR6120047113,Ambiguous/low score (0.15),0.15
+SET-092,1653.14,UTR5869261796,Ambiguous/low score (0.00),0.0
+SET-093,2877.79,UTR3773515850,Ambiguous/low score (0.45),0.45
+SET-094,8904.98,UTR3183933529,Ambiguous/low score (0.45),0.45
+SET-095,7214.87,UTR9502402681,Ambiguous/low score (0.00),0.0
+SET-096,4548.09,UTR8917839084,Ambiguous/low score (0.45),0.45
+SET-097,3237.95,UTR1249985698,Ambiguous/low score (0.45),0.45
+SET-098,4017.42,UTR6615654527,Ambiguous/low score (0.45),0.45
+SET-099,5274.31,UTR6560494519,Ambiguous/low score (0.15),0.15
+SET-100,1815.21,UTR3158514936,Ambiguous/low score (0.15),0.15
