@@ -98,7 +98,7 @@ Documents (PDF / Excel / Word / CSV / TXT)
 ### 1. Clone
 
 ```bash
-git clone https://github.com/kratagyasingh-dev/SettleMatch.git
+git clone https://github.com/kratagyaSingh-dev/SettleMatch.git
 cd SettleMatch
 ```
 
