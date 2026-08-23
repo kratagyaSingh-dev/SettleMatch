@@ -22,7 +22,7 @@ st.set_page_config(
     page_title="SettleMatch",
     page_icon="₹",
     layout="wide",
-    initial_sidebar_state="auto",
+    initial_sidebar_state="expanded",
 )
 
 CUSTOM_CSS = """
@@ -49,15 +49,60 @@ html, body, .stApp, [data-testid="stAppViewContainer"],
     linear-gradient(180deg, #f7faf8 0%, #eef3f0 100%) !important;
 }
 
-#MainMenu, footer, .stDeployButton { visibility: hidden; display: none; }
-header[data-testid="stHeader"] {
-  background: transparent !important;
+#MainMenu, footer, .stDeployButton,
+[data-testid="stToolbar"], [data-testid="stDecoration"],
+[data-testid="stStatusWidget"], .stAppDeployButton {
+  visibility: hidden !important;
+  display: none !important;
 }
-[data-testid="stSidebarCollapsedControl"],
-[data-testid="collapsedControl"] {
-  display: flex !important;
+
+/* Keep Streamlit header alive so the sidebar toggle exists on phones. */
+header, header[data-testid="stHeader"] {
   visibility: visible !important;
-  z-index: 1000 !important;
+  display: block !important;
+  background: transparent !important;
+  height: 3.2rem !important;
+}
+
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"],
+[data-testid="stExpandSidebarButton"] {
+  visibility: visible !important;
+  display: flex !important;
+  position: fixed !important;
+  top: 0.7rem !important;
+  left: 0.7rem !important;
+  z-index: 1000000 !important;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 12px !important;
+  background: #0d1f1a !important;
+  color: #fff !important;
+  border: 1px solid #0d1f1a !important;
+  box-shadow: 0 6px 18px rgba(13, 31, 26, 0.2) !important;
+}
+
+#sm-nav-dots {
+  display: none;
+  position: fixed;
+  top: 0.7rem;
+  right: 0.7rem;
+  z-index: 1000001;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #0d1f1a;
+  border-radius: 12px;
+  background: #0d1f1a;
+  color: #fff;
+  font-size: 1.35rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(13, 31, 26, 0.2);
+}
+@media (max-width: 768px) {
+  #sm-nav-dots { display: inline-flex; align-items: center; justify-content: center; }
+  .block-container { padding-top: 3.4rem !important; }
 }
 
 .block-container {
@@ -205,6 +250,17 @@ div.stButton > button:not([kind="primary"]):not([data-testid="baseButton-primary
 }
 section[data-testid="stSidebar"] {
   background: #f3f6f4 !important;
+  z-index: 999999 !important;
+}
+[data-testid="stPopover"] button {
+  background: #0d1f1a !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  border: 1px solid #0d1f1a !important;
+  border-radius: 12px !important;
+  min-height: 42px !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 0.08em !important;
 }
 </style>
 """
@@ -283,14 +339,14 @@ if st.session_state.get("nav_pending"):
 if st.session_state.get("nav_page") == "Run":
     st.session_state.nav_page = "Upload"
 
-# ----- Sidebar (status only — page switch is in the main bar so phones can use it) -----
+# ----- Sidebar -----
 with st.sidebar:
     st.markdown(
         '<p class="sm-kicker">SettleMatch</p>'
         '<p class="sm-brand" style="font-size:1.35rem !important;">Workspace</p>',
         unsafe_allow_html=True,
     )
-    st.caption("Pages also sit at the top of the screen on phone.")
+    page = st.radio("Navigate", PAGES, label_visibility="collapsed", key="nav_page")
     st.divider()
     result_ready = st.session_state.result is not None
     st.markdown(
@@ -303,7 +359,21 @@ with st.sidebar:
     if reviewed:
         st.caption(f"Human reviews logged: {reviewed}")
 
-page = st.selectbox("Page", PAGES, key="nav_page")
+# Phone: 3-dots opens the same Workspace pages (sidebar is often hidden on mobile).
+dots, _ = st.columns([1, 6])
+with dots:
+    with st.popover("···"):
+        st.caption("Workspace")
+        jump = st.radio(
+            "Workspace pages",
+            PAGES,
+            index=PAGES.index(page) if page in PAGES else 0,
+            label_visibility="collapsed",
+            key="mobile_nav_jump",
+        )
+        if jump != page:
+            st.session_state.nav_pending = jump
+            st.rerun()
 
 st.markdown(
     """
