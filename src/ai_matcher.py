@@ -79,10 +79,19 @@ Return ONLY valid JSON with this schema:
 """
 
 
+_MODEL_CANDIDATES = [
+    "gemini-3.6-flash",
+    "gemini-2.5-flash",
+    "gemini-2.0-flash",
+    "gemini-1.5-flash",
+    "gemini-flash-latest",
+]
+
+
 def _heuristic_suggestion(
     settlement: pd.Series, candidates: pd.DataFrame
 ) -> AISuggestion:
-    """Offline fallback when no GEMINI_API_KEY — still demoable."""
+    """Offline matcher when Gemini is missing or rate-limited."""
     best_id = None
     best_score = 0.0
     best_reason = "No strong candidate"
@@ -120,7 +129,7 @@ def _heuristic_suggestion(
         settlement_id=settlement["settlement_id"],
         bank_txn_id=None if refuse else best_id,
         confidence=round(min(best_score, 0.99), 2),
-        reason=best_reason if not refuse else f"Ambiguous/low score ({best_score:.2f})",
+        reason=best_reason if not refuse else f"No unique bank credit (score {best_score:.2f})",
         refuse=refuse,
         raw_response="heuristic_fallback",
     )
@@ -146,9 +155,26 @@ class AIMatcher:
         self.api_key = api_key or _setting("GEMINI_API_KEY")
         self.model_name = model or _setting("GEMINI_MODEL", "gemini-3.6-flash")
         self._model = None
+        self._offline = False
+        self._tried = set()
         if self.api_key and genai is not None:
             genai.configure(api_key=self.api_key)
             self._model = genai.GenerativeModel(self.model_name)
+
+    def _next_model(self) -> bool:
+        self._tried.add(self.model_name)
+        for name in [self.model_name, *_MODEL_CANDIDATES]:
+            if name in self._tried or not name:
+                continue
+            try:
+                self._model = genai.GenerativeModel(name)
+                self.model_name = name
+                return True
+            except Exception:
+                self._tried.add(name)
+        self._model = None
+        self._offline = True
+        return False
 
     @property
     def mode(self) -> str:
@@ -197,24 +223,13 @@ class AIMatcher:
                 raw_response=raw,
             )
         except Exception as exc:  # noqa: BLE001 — fall back so demo still works
-            err = str(exc)
-            # Quota / model / network failures → safe offline matcher
-            if any(
-                token in err.lower()
-                for token in ("429", "quota", "404", "not available", "resource exhausted")
-            ):
-                fb = _heuristic_suggestion(settlement, candidates)
-                fb.reason = f"Gemini unavailable — heuristic fallback: {fb.reason}"
-                fb.raw_response = f"fallback_after_error: {err[:200]}"
-                return fb
-            return AISuggestion(
-                settlement_id=settlement["settlement_id"],
-                bank_txn_id=None,
-                confidence=0.0,
-                reason=f"AI call failed: {exc}",
-                refuse=True,
-                raw_response=str(exc),
-            )
+            err = str(exc).lower()
+            if any(token in err for token in ("404", "not found", "not available")):
+                if self._next_model():
+                    return self.suggest(settlement, candidates)
+            fb = _heuristic_suggestion(settlement, candidates)
+            fb.raw_response = f"fallback_after_error: {str(exc)[:200]}"
+            return fb
 
 
 def top_candidates(
