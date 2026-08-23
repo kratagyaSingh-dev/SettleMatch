@@ -265,7 +265,89 @@ section[data-testid="stSidebar"] {
 </style>
 """
 
-st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
+DARK_CSS = """
+<style>
+:root, [data-testid="stAppViewContainer"], .stApp {
+  --ink: #e8efe9 !important;
+  --ink-soft: #9aada4 !important;
+  --line: #2c3a35 !important;
+  --jade: #3dcfb0 !important;
+  color-scheme: dark !important;
+}
+html, body, .stApp, [data-testid="stAppViewContainer"],
+[data-testid="stMarkdownContainer"], [data-testid="stMarkdownContainer"] * {
+  color: #e8efe9 !important;
+}
+.stApp, [data-testid="stAppViewContainer"] {
+  background:
+    radial-gradient(1000px 420px at 10% -10%, #16352c 0%, transparent 50%),
+    linear-gradient(180deg, #0c1210 0%, #111816 100%) !important;
+}
+header, header[data-testid="stHeader"] { background: transparent !important; }
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="collapsedControl"],
+[data-testid="stExpandSidebarButton"] {
+  background: #e8efe9 !important;
+  color: #0c1210 !important;
+  border-color: #e8efe9 !important;
+}
+.sm-brand, .sm-brand * { color: #f4faf6 !important; -webkit-text-fill-color: #f4faf6 !important; }
+.sm-kicker { color: #3dcfb0 !important; }
+.sm-lede, .sm-section p, .sm-panel-sub, .sm-kpi .hint, .sm-kpi .label, .sm-foot {
+  color: #9aada4 !important;
+}
+.sm-kpi, .sm-panel {
+  background: #1a2220 !important;
+  border-color: #2c3a35 !important;
+}
+.sm-kpi .value, .sm-panel-title, .sm-section h2, .sm-empty strong {
+  color: #f4faf6 !important;
+}
+.sm-status.ok { background: #16382c; color: #8ee0c2; border-color: #245544; }
+.sm-status.warn { background: #3a2f14; color: #e6c56a; border-color: #5a4a1e; }
+.sm-status.neutral { background: #1e2724; color: #9aada4; border-color: #2c3a35; }
+.sm-empty { background: rgba(26,34,32,0.7); border-color: #2c3a35; color: #9aada4; }
+div.stButton > button[kind="primary"],
+div.stButton > button[data-testid="baseButton-primary"] {
+  background: #3dcfb0 !important;
+  border-color: #3dcfb0 !important;
+  color: #0c1210 !important;
+  -webkit-text-fill-color: #0c1210 !important;
+}
+div.stButton > button[kind="primary"] p,
+div.stButton > button[data-testid="baseButton-primary"] p,
+div.stButton > button[kind="primary"] span,
+div.stButton > button[data-testid="baseButton-primary"] span {
+  color: #0c1210 !important;
+  -webkit-text-fill-color: #0c1210 !important;
+}
+div.stButton > button[kind="primary"]:disabled,
+div.stButton > button[data-testid="baseButton-primary"]:disabled {
+  background: #1e2724 !important;
+  border-color: #2c3a35 !important;
+  color: #9aada4 !important;
+  -webkit-text-fill-color: #9aada4 !important;
+}
+div.stButton > button:not([kind="primary"]):not([data-testid="baseButton-primary"]) {
+  background: #1a2220 !important;
+  border-color: #2c3a35 !important;
+  color: #e8efe9 !important;
+  -webkit-text-fill-color: #e8efe9 !important;
+}
+[data-testid="stDataFrame"] { border-color: #2c3a35; background: #1a2220; }
+section[data-testid="stSidebar"] { background: #101614 !important; }
+[data-testid="stPopover"] button {
+  background: #e8efe9 !important;
+  color: #0c1210 !important;
+  -webkit-text-fill-color: #0c1210 !important;
+  border-color: #e8efe9 !important;
+}
+[data-testid="stHeader"] { background: transparent !important; }
+.stSlider, .stRadio, .stSelectbox, .stTextInput, .stFileUploader, .stMetric {
+  color: #e8efe9 !important;
+}
+</style>
+"""
 
 UPLOAD_TYPES = ["csv", "xlsx", "xls", "pdf", "docx", "txt"]
 
@@ -277,6 +359,7 @@ for key, default in [
     ("input_paths", None),
     ("reviews", {}),
     ("nav_page", "Upload"),
+    ("theme", "Light"),
     (
         "connections",
         {
@@ -293,6 +376,22 @@ for key, default in [
 ]:
     if key not in st.session_state:
         st.session_state[key] = default
+
+if st.session_state.get("theme_pending"):
+    st.session_state.theme = st.session_state.pop("theme_pending")
+
+st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
+if st.session_state.get("theme") == "Dark":
+    st.markdown(DARK_CSS, unsafe_allow_html=True)
+    try:
+        alt.themes.enable("dark")
+    except Exception:
+        pass
+else:
+    try:
+        alt.themes.enable("default")
+    except Exception:
+        pass
 
 
 def _kpi_html(stats: dict) -> str:
@@ -347,6 +446,7 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
     page = st.radio("Navigate", PAGES, label_visibility="collapsed", key="nav_page")
+    st.radio("Theme", ["Light", "Dark"], horizontal=True, key="theme")
     st.divider()
     result_ready = st.session_state.result is not None
     st.markdown(
@@ -373,6 +473,14 @@ with dots:
         )
         if jump != page:
             st.session_state.nav_pending = jump
+            st.rerun()
+        st.caption("Theme")
+        t1, t2 = st.columns(2)
+        if t1.button("Light", use_container_width=True, key="pop_light"):
+            st.session_state.theme_pending = "Light"
+            st.rerun()
+        if t2.button("Dark", use_container_width=True, key="pop_dark"):
+            st.session_state.theme_pending = "Dark"
             st.rerun()
 
 st.markdown(
