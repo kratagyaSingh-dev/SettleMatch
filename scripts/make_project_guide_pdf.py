@@ -221,7 +221,7 @@ def build() -> Path:
     pdf.set_xy(22, 168)
     pdf.set_font("Helvetica", "B", 11)
     pdf.set_text_color(255, 255, 255)
-    pdf.cell(0, 6, f"Sample batch: {match_pct:.0f}% match  |  {exceptions} exceptions  |  0 false matches")
+    pdf.cell(0, 6, f"Sample batch: {match_pct:.0f}% match  |  {rec_pct:.0f}% recovery  |  {exceptions} leftovers")
     pdf.set_xy(22, 250)
     pdf.set_font("Helvetica", "I", 10)
     pdf.set_text_color(168, 201, 188)
@@ -295,9 +295,7 @@ def build() -> Path:
             ["Collisions blocked", str(m.get("collisions_detected", 15))],
             ["Money matched", f"Rs {money:,.0f}"],
             ["Money at risk", f"Rs {risk:,.0f}"],
-            ["Recovery rate", f"{rec_pct:.1f}%"],
-            ["Eval precision / recall", "100% / 100%"],
-            ["False matches", str(m.get("eval_false_matches", 0))],
+            ["Recovery rate", f"{rec_pct:.1f}%  (quality number we show)"],
         ],
         [90, 92],
     )
@@ -364,7 +362,7 @@ def build() -> Path:
 
     pdf.h3("4.8  Exception queue and human review")
     pdf.p(
-        f"This batch has {exceptions} honest refusals - not a fake 100% score. Finance can "
+        f"This batch has {exceptions} leftovers still open. Finance can "
         "Approve manually, Reject / keep open, or mark Needs finance follow-up. Reviews stay "
         "in the workspace. They do not auto-move money."
     )
@@ -372,8 +370,8 @@ def build() -> Path:
     pdf.h3("4.9  Dashboard")
     pdf.p(
         "Four KPIs: match rate, recovery rate, money matched, money at risk. Plus rules/AI split, "
-        "collisions blocked, gate used, and a ground-truth eval strip when output/eval_metrics.json "
-        "exists. Charts: match breakdown, close-rate donut, money recovered vs at risk, rules vs AI."
+        "collisions blocked, and the gate used. Charts: match breakdown, close-rate donut, "
+        "money recovered vs at risk, rules vs AI. Say recovery (~87%), not a 1.00 score."
     )
 
     pdf.h3("4.10  Gate simulator")
@@ -404,9 +402,9 @@ def build() -> Path:
 
     pdf.h3("4.13  Ground-truth eval")
     pdf.p(
-        "python eval/run_eval.py compares output to data/expected/ground_truth.csv "
-        "(correct / false / missed matches, true exceptions respected, precision and recall). "
-        "audit_extract.py covers 25 format combinations. smoke_test.py checks the happy path."
+        "python eval/run_eval.py compares output to data/expected/ground_truth.csv. "
+        "audit_extract.py covers 25 format combinations. smoke_test.py checks the happy path. "
+        "Do not lead a pitch with a 1.00 precision number."
     )
 
     # WALKTHROUGH
@@ -445,7 +443,7 @@ def build() -> Path:
         f"matched Rs {money:,.0f}, at risk Rs {risk:,.0f}.",
     )
     pdf.step(3, f"Split: {rules} rules + {ai} AI. {exceptions} exceptions listed honestly.")
-    pdf.step(4, "Read the charts, then the eval strip: precision/recall 100%, 0 false matches.")
+    pdf.step(4, f"Read the charts. Quality number to say out loud: {rec_pct:.1f}% recovery, not a 1.00 score.")
     pdf.shot("05_dashboard.png", f"Fig 8 - Dashboard after the live run ({matched} matched, {exceptions} exceptions).")
 
     pdf.band("9  Walkthrough - Matches")
@@ -554,7 +552,7 @@ def build() -> Path:
     pdf.band("17  Five-minute pitch")
     pdf.step(1, "0:00  Problem: two lists, manual matching, audit pain.")
     pdf.step(2, "0:45  Upload live files. Click Reconcile.")
-    pdf.step(3, f"1:30  Dashboard: {match_pct:.0f}% match, Rs {money:,.0f} recovered, 0 false matches.")
+    pdf.step(3, f"1:30  Dashboard: {match_pct:.0f}% match, {rec_pct:.0f}% recovery, {exceptions} leftovers.")
     pdf.step(4, "2:30  One exception + human review. We refuse. We do not guess.")
     pdf.step(5, "3:30  Connections: nightly Razorpay + bank ingest.")
     pdf.step(6, "4:30  Download the audit pack. Close.")

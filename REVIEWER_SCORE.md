@@ -17,7 +17,7 @@
 - [x] Upload path hidden under expander
 - [x] Multi-page product navigation
 - [x] Exception human review queue
-- [x] Eval metrics on Dashboard
+- [x] Dashboard KPIs (match + recovery, no 100% badge)
 - [x] Submission-grade README + architecture
 
 ## Still optional (nice, not blocking)

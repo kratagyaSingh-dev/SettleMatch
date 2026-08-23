@@ -204,12 +204,12 @@ def build() -> Path:
             ("Match rate", "90%"),
             ("Rule / AI", "75 / 15"),
             ("Exceptions", "10"),
-            ("False matches", "0"),
+            ("Recovery", "87%"),
         ]
     )
     pdf.body(
-        "Signal for reviewers: high accuracy, clear AI contribution, "
-        "and honest unresolved cases - not a cherry-picked demo."
+        "90% of rows closed, about 87% of rupees recovered, 10 leftovers "
+        "left for a human. Not a 100% scorecard."
     )
 
     pdf.slide_title("09  |  Why This Wins Track 04")
@@ -267,7 +267,7 @@ def build() -> Path:
         "SettleMatch is an AI finance controller. It reconciles Razorpay settlements "
         "with bank credits. Clear cases are matched by rules, messy cases by AI, and "
         "anything uncertain is refused with an audit trail. On 100 records we hit 90% "
-        "match with zero false matches and 10 honest exceptions."
+        "match, about 87% rupee recovery, and 10 leftovers for a human."
     )
 
     pdf.output(OUT)

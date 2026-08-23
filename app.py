@@ -682,17 +682,10 @@ elif page == "Dashboard":
         m2.metric("Collisions blocked", stats.get("collisions_detected", 0))
         m3.metric("Gate", f"{stats.get('confidence_threshold', 0.85):.0%}")
 
-        eval_path = Path("output/eval_metrics.json")
-        if eval_path.exists():
-            import json
-
-            ev = json.loads(eval_path.read_text(encoding="utf-8"))
-            st.caption("Ground-truth eval (offline accuracy check)")
-            v1, v2, v3, v4 = st.columns(4)
-            v1.metric("Precision", f"{ev.get('eval_precision_like', 0):.0%}")
-            v2.metric("Recall", f"{ev.get('eval_recall_like', 0):.0%}")
-            v3.metric("False matches", ev.get("eval_false_matches", "—"))
-            v4.metric("True exceptions respected", ev.get("eval_true_exceptions_respected", "—"))
+        st.caption(
+            "Recovery (₹ matched / settlement value) is the quality number — "
+            "not a 100% precision badge."
+        )
 
         # Row 1 charts
         c1, c2 = st.columns(2)

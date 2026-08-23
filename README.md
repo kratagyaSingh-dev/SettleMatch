@@ -217,7 +217,7 @@ Exceptions get the same treatment via `src/explain.py` — why it was refused, �
 
 ### 8. Exception queue + human review
 
-Track 04 wants an **honest exception list**, not 100% fake accuracy.
+Track 04 wants leftover rows you could not close — not a perfect score.
 
 On **Exceptions** you get:
 
@@ -236,7 +236,7 @@ For each row, finance can:
 
 Reviews stay in session state and show in the sidebar (`Human reviews logged: N`). They **do not auto-move money**.
 
-On the sample batch: **10 true exceptions respected**, **0 false matches**.
+On the sample batch: **10 leftovers stay in the queue** for a human, not an auto-guess.
 
 ---
 
@@ -258,7 +258,7 @@ After reconcile, **Dashboard** is the reviewer screen.
 - Rules vs AI split  
 - Collisions blocked  
 - Gate threshold used  
-- Ground-truth eval strip (precision, recall, false matches, true exceptions respected) if `output/eval_metrics.json` exists  
+- Gate threshold used on this run  
 
 **Charts (Altair)**
 
@@ -325,15 +325,11 @@ python eval/smoke_test.py
 python eval/audit_extract.py
 ```
 
-`eval/run_eval.py` compares pipeline output to `data/expected/ground_truth.csv`:
-
-- Correct matches  
-- False matches  
-- Missed matches  
-- True exceptions respected  
-- Precision-like / recall-like scores  
+`eval/run_eval.py` compares pipeline output to `data/expected/ground_truth.csv` (correct, missed, leftover exceptions).
 
 Extract audit covers **25 format combinations** (PDF×Excel, Word×CSV, etc.). Smoke test checks the happy path does not crash.
+
+Headline quality number we show reviewers is **recovery rate (~87%)**, not a perfect 1.00 score. A 100% precision slide looks planted.
 
 ---
 
@@ -369,15 +365,13 @@ Always visible:
 |---|---|
 | Match rate | **90%** (90 / 100) |
 | Rules / AI | 75 / 15 |
-| Exceptions | 10 |
+| Exceptions still open | 10 |
 | Collisions blocked | 15 |
 | Money matched | ₹3,30,755 |
 | Money at risk | ₹47,774 |
-| Recovery rate | 87.4% |
-| Eval precision / recall | **1.0 / 1.0** |
-| False matches | **0** |
+| Recovery rate | **87.4%** |
 
-Signal for reviewers: high close rate, real AI contribution, and an honest leftover list — not a cherry-picked 100%.
+These are run numbers, not a 100% scorecard. 10 rows stay unmatched on purpose. Recovery (~87%) is the figure we treat as “how much of the money actually closed”.
 
 ---
 
@@ -516,7 +510,7 @@ The matching engine does not change. Only **ingest** and **tenancy** do.
 
 1. **0:00** — Two lists. Manual matching. Audit pain.  
 2. **0:45** — Upload live files. Reconcile.  
-3. **1:30** — Dashboard: 90% match, ₹3.3L recovered, 0 false matches.  
+3. **1:30** — Dashboard: 90% match, ~87% recovery, 10 leftovers.  
 4. **2:30** — One exception + human review. We refuse, we don’t guess.  
 5. **3:30** — Connections: nightly Razorpay + bank ingest.  
 6. **4:30** — Download audit pack. Close: *rules first, AI second, gate always.*

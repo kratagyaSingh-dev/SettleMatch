@@ -60,7 +60,7 @@ PDF/Excel/Word/CSV/TXT
 - Money matched vs money at risk (INR)  
 - Rules vs AI split  
 - Collisions detected  
-- Ground-truth precision / recall / false matches (`eval/`)  
+- Match rate, recovery rate, leftover exceptions (`eval/` compares to labels)  
 
 ## Why this is Track 04
 
